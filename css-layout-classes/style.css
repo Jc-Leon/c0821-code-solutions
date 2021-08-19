@@ -18,15 +18,14 @@ img {
   width: 100%;
 }
 
-.row:nth-child(3) img {
-  width: 12.5rem;
-  height: 12.5rem;
+.column-one-fourth {
+  flex-basis: 25%;
 }
 
-.twoThird {
+.column-two-third {
   flex-basis: 66%;
 }
 
-.oneThird {
+.column-one-third {
   flex-basis: 33%;
 }
