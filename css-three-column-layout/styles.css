@@ -1,0 +1,23 @@
+.container {
+  margin: auto;
+  background-color: #1996da;
+  color: #fff;
+  font-family: "Lato";
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.column-one-third {
+  flex-basis: 33%;
+  text-align: center;
+}
+img {
+  height: 10%;
+  width: auto;
+}
+.border {
+  margin: 9px 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
