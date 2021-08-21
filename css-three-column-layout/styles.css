@@ -1,23 +1,39 @@
 .container {
-  margin: auto;
   background-color: #1996da;
   color: #fff;
   font-family: "Lato";
 }
 .row {
   display: flex;
+  padding: 0 8rem;
+}
+.column {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
   justify-content: center;
 }
-.column-one-third {
-  flex-basis: 33%;
-  text-align: center;
-}
-img {
-  height: 10%;
-  width: auto;
+.row img {
+  border-style: none;
+  height: 50px;
+  width: 50px;
 }
 .border {
-  margin: 9px 5rem;
-  border-radius: 50%;
+  padding: 20px;
   background-color: #fff;
+  border-radius: 6rem;
+}
+h2 {
+  text-align: center;
+  padding: 4rem 0 1rem 0;
+}
+h3 {
+  font-size: 16px;
+}
+p{
+  font-size: 12px
+}
+.text {
+  text-align: center;
+  padding-bottom: 10px;
 }
