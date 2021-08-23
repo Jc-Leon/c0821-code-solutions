@@ -1,4 +1,13 @@
+.row-one {
+  display: flex;
+  width: 10rem;
+}
+
 .nav-container {
   display: flex;
-  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
 }
