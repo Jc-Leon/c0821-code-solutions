@@ -1,13 +1,11 @@
-.row-one {
-  display: flex;
-  width: 10rem;
-}
-
-.nav-container {
+.container {
   display: flex;
 }
 
-.tabs {
+.column-full {
   display: flex;
-  align-items: center;
+}
+
+.text {
+  display: flex;
 }
