@@ -1,3 +1,7 @@
+* {
+    font-family: "Tiempos Headline";
+
+}
 .row {
   display: flex;
 }
@@ -56,13 +60,13 @@ hr {
 }
 
 .hero-text {
-  position: absolute;
-  width: 41rem;
-  padding-left: 6rem;
-  top: 7rem;
-  color: #fff;
-  line-height: 31px;
-  font-size: 19px;
+    position: absolute;
+    width: 40rem;
+    padding-left: 6rem;
+    top: 7rem;
+    color: #fff;
+    line-height: 33px;
+    font-size: 17px;
 }
 
 .relative {
