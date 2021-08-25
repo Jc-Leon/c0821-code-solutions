@@ -1,38 +1,147 @@
-header {
+.row {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
-  margin: 0 10rem;
 }
 
-.text {
-  display: flex;
+.half {
+  width: 50%;
+}
+
+.full {
+  width: 100%;
+}
+
+.space-between {
+  justify-content: space-between;
   align-items: center;
 }
 
-.text p {
-  padding: 0 2rem;
-  font-size: 1.1rem;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-padding {
+  padding: 2rem 0 0.4rem;
+}
+
+.contact {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 16px;
+}
+
+.grey-color {
   color: #a1a1a1;
 }
 
-.blue-logo {
+.button-color {
+  background-color: #294464;
+  color: #fff;
+  cursor: pointer;
+}
+
+hr {
+  background-color: rgba(236, 232, 232, 1);
+  height: 0.5px;
+  border: none;
+}
+
+.logo {
   width: 9rem;
 }
 
-.main-container {
-  margin: 0 10px;
-  display: flex;
+.hero {
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  width: 41rem;
+  padding-left: 6rem;
+  top: 7rem;
+  color: #fff;
+  line-height: 31px;
+  font-size: 19px;
+}
+
+.relative {
+  position: relative;
+  width: 100%;
+  height: 675px;
+  background-image: url(./images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.black-out {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.hero-text h1 {
+  font-size: 41px;
+  line-height: 3rem;
+}
+
+.start-button {
+  padding: 1rem 3rem;
+  font-size: 20px;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.main-padding {
+  padding: 4rem 0;
+}
+
+.grey-back {
+  background-color: #fafafa;
+}
+
+.flex-center {
   flex-direction: column;
+  text-align: center;
 }
 
-.row {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+h2 {
+  color: #6e6e6e;
+  padding-top: 2rem;
 }
 
-.column {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.line-height {
+  line-height: 1px;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.location-padding {
+  padding: 3rem 0;
+}
+
+.dark-back {
+  background-color: #525351;
+  color: #fff;
+}
+
+.about-padding {
+  padding: 5rem 0 6rem;
+}
+
+.img-padding {
+  padding-bottom: 2rem;
+}
+
+.ready-padding {
+  padding: 1rem 0;
+}
+
+.third {
+  width: 30%;
 }
