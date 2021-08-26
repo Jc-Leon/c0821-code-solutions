@@ -6,11 +6,11 @@
   display: flex;
 }
 
-.half {
+.column-half {
   width: 50%;
 }
 
-.full {
+.column-full {
   width: 100%;
 }
 
