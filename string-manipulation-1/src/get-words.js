@@ -6,3 +6,6 @@ function getWords(string) {
     return [];
   }
 }
+// if the length of string is less than 0
+// split the empty space value of the string
+// else return an empty array

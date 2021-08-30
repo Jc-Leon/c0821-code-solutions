@@ -6,3 +6,6 @@ function isLowerCased(word) {
     return false;
   }
 }
+// if word is strictly equal to the word being converted to lowercase
+// return true
+// if not return false

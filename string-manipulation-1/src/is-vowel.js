@@ -8,3 +8,8 @@ function isVowel(character) {
   }
   return false;
 }
+// create an array with vowels as its arugements
+// create a for loop to loop through the length of the vowels array
+// create condition if the character is strictly to vowels at its index
+// return true
+// if not return false

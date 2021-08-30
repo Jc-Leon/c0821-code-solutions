@@ -6,3 +6,6 @@ function isUpperCased(word) {
     return false;
   }
 }
+// if word is strictly equal to the word being converted to uppercase
+// return true
+// if not return false
