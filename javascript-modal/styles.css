@@ -1,0 +1,51 @@
+.open {
+  background-color: #4a4ae9;
+  color: #fff;
+  height: 3rem;
+  width: 13rem;
+  font-size: 25px;
+  border-radius: 6px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 30rem;
+  height: 14rem;
+  margin-left: 35rem;
+  margin-top: 5rem;
+  background-color: white;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+}
+
+.close {
+  background-color: #eb5d5d;
+  color: #fff;
+  width: 7rem;
+  height: 3rem;
+  font-size: 27px;
+  border: none;
+  border-radius: 6px;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.push:active {
+  transform: translateY(0.25rem);
+}
