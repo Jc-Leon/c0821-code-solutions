@@ -1,0 +1,55 @@
+.box-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Karla";
+}
+img {
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column-one-fourth {
+  flex-basis: 25%;
+}
+.column-two-third {
+  flex-basis: 75%;
+}
+
+.top-pad {
+  padding-top: 3rem;
+}
+.title {
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+h2 {
+  font-size: 19px;
+  margin: 0;
+}
+.sub-head {
+  padding: 0 39rem;
+}
+p {
+  color: #454545;
+  line-height: 2rem;
+}
+footer {
+  text-align: center;
+  border: solid 3px;
+  width: 13rem;
+  margin-top: 4rem;
+  padding: 0.5rem;
+  color: #d14f4d;
+  font-size: 20px;
+}
