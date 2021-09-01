@@ -9,8 +9,8 @@ function logKey(e) {
       $span.className = 'correct';
 
     }
-    console.log('hello', event.code);
+    // console.log('hello', event.code);
 
   }
 }
-console.log('nodelist', $span[0]);
+// console.log('nodelist', $span[0]);
