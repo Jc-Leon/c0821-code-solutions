@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10rem;
+}
+span {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 0px;
+  border-bottom: solid;
+}
+.correct {
+  border-bottom: solid #1acd1d ;
+  }
+.wrong {
+  border-bottom: solid #f80e0d ;
+}
