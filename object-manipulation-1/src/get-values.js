@@ -6,3 +6,8 @@ function getValues(object) {
   }
   return arr;
 }
+// create a new var with an empty array
+// create a for in loop
+// for var in key in object object
+// push the object at the key to the new arr
+// return the new arr from the function
