@@ -7,26 +7,27 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="pokemon.css" />
     <style>
+      #card-deck {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-          #card-deck {
-            display: flex;
-            flex-wrap: wrap;
-          }
+      .card-container {
+        padding: 0.5rem;
+        flex-basis: 100%;
+      }
 
+      /* your code here 👇 */
+      @media only screen and (min-width: 575px) {
+        .card-container {
+          flex-basis: 50%;
+        }
+        @media only screen and (min-width: 767px) {
           .card-container {
-            padding: 0.5rem;
-            flex-basis: 100%;
+            flex-basis: calc(100% / 3);
           }
-
-          /* your code here 👇 */
-      @media screen and (min-width: 575px) {
-        .card-container {
-          flex-basis: 50%
         }
-      @media screen and (min-width: 767px) {
-        .card-container {
-          flex-basis: calc(100% / 3)
-        }
+      }
     </style>
   </head>
   <body>
