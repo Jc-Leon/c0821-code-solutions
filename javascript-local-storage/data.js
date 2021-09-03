@@ -7,7 +7,7 @@ function handleStorage(event) {
   localStorage.setItem('javascript-local-storage', todosJSON);
   var previousTodosJSON = localStorage.getItem('javascript-local-storage');
 
-  if (localStorage !== null) {
+  if (previousTodosJSON !== null) {
     todos = JSON.parse(previousTodosJSON);
   }
 }
