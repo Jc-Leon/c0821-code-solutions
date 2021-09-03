@@ -1,16 +1,14 @@
 var $span = document.querySelectorAll('span');
+var i = 0;
 
-document.addEventListener('keydown', logKey);
-
-function logKey(e) {
-  for (var i = 0; i < $span.length; i++) {
-
-    if ($span[0] === event.code[i]) {
-      $span.className = 'correct';
-
-    }
-    // console.log('hello', event.code);
-
+function handleClick(event) {
+  var span = $span[i];
+  if ($span[i].textContent === event.key) {
+    span.className = 'correct';
+    i++;
+    $span[i].className = 'bottom';
+  } else {
+    span.className = 'wrong';
   }
 }
-// console.log('nodelist', $span[0]);
+document.addEventListener('keydown', handleClick);

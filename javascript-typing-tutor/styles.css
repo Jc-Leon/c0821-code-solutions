@@ -3,15 +3,16 @@
   font-size: 50px;
   margin-top: 10rem;
 }
-span {
-  height: 100%;
-  width: 100%;
-  letter-spacing: 0px;
-  border-bottom: solid;
+
+.bottom {
+  border-bottom: solid black 5px;
 }
+
 .correct {
-  border-bottom: solid #1acd1d ;
-  }
+  color: #1acd1d;
+}
+
 .wrong {
-  border-bottom: solid #f80e0d ;
+  color: #f80e0d;
+  border-bottom: solid #f80e0d 5px;
 }
