@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10rem;
+}
+
+.bottom {
+  border-bottom: solid black 5px;
+}
+
+.correct {
+  color: #1acd1d;
+}
+
+.wrong {
+  color: #f80e0d;
+  border-bottom: solid #f80e0d 5px;
+}
