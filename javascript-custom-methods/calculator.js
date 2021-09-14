@@ -18,18 +18,15 @@ var calculator = {
   sumAll: function (numbers) {
     var sumAll = 0;
     for (var i = 0; i < numbers.length; i++) {
-      var index = numbers[i];
-      sumAll += index;
+      sumAll += numbers[i];
     }
     return sumAll;
   },
   getAverage: function (numbers) {
     var sumAll = 0;
     for (var i = 0; i < numbers.length; i++) {
-      var length = numbers.length;
-      var index = numbers[i];
-      sumAll += index;
+      sumAll += numbers[i];
     }
-    return sumAll / length;
+    return sumAll / numbers.length;
   }
 };
