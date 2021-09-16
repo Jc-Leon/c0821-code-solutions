@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  margin-left: 32rem;
+  margin-top: 12rem;
+}
+
+.column-full {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
