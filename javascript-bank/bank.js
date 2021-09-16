@@ -15,13 +15,22 @@ Bank.prototype.openAccount = function (holder, balance) {
   return accNum;
 };
 Bank.prototype.getAccount = function (number) {
-  if (number <= 0 || Number.isInteger(number)) {
+  if (number <= 0 || !Number.isInteger(number)) {
     return null;
-  } else {
-    return this.accounts;
   }
+  for (var i = 0; i < this.accounts.length; i++) {
+    var acc = this.accounts[i];
+    if (number === acc.number) {
+      return acc;
+    }
+  }
+  return null;
 };
-
 Bank.prototype.getTotalAssets = function () {
-
+  var total = 0;
+  for (var i = 0; i < this.accounts.length; i++) {
+    var acc = this.accounts[i];
+    total += acc.getBalance();
+  }
+  return total;
 };
