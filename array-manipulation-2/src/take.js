@@ -6,4 +6,3 @@ function take(array, count) {
   }
   return arr.slice(0, count);
 }
-// shift pop splice
