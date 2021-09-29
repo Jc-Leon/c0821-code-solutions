@@ -11,12 +11,11 @@ function truncate(length, string) {
   str += '...';
   return str;
 }
-// creating an empty string str
-// assigning the parameter length to new var end
-// with condtion if the end var is greater than the length of parameter string
-// then string.length is being resasigned to end var
-// create for loop with an initilization of var i =0 with the condition that i is less than the end var
-// with the final expression of i being incremented by 1
-// concatentanate str with string at i
-// then concatentanate str with "..."
+// create an empty string str
+// assigning the length to new var
+// check if the length is greater than the length of string
+// if it passes string.length is assigned to length
+// check each length index
+// add and assign the string at its index to the empty string
+// and add an elipses to it
 // return new str

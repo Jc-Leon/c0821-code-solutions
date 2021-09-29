@@ -14,12 +14,9 @@ function swapChars(firstIndex, secondIndex, string) {
   return newStr;
 }
 
-// create new var str
-// create for loop with initialization i = 0
-// with condition i < string.length
-// with final expression i is incrementing by 1
-// assign string at the index i to a new variable char
-// create condition if index is strictly equal to the first index parameter
-// then concatenate the newStr var to the string at the second index parameter
-// create condition else if index is strictly equal to the second index parameter
-// then concatenate the newStr var to the string at the first index parameter
+/* create emptry string var
+check each index of the length of the string
+make condtion if index equals first index then assign that to the secondindex
+and do the same thing vice versa else return the index to the new string
+return the new str
+*/

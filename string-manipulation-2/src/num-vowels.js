@@ -9,3 +9,10 @@ function numVowels(string) {
   }
   return totalVowels;
 }
+/*
+have a counter start at 0
+create a array of vowels and loop through array
+and make a condition if there are vowels in the string
+then increment the counter by 1
+and return the counter
+*/
