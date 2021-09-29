@@ -6,3 +6,9 @@ function dropRight(array, count) {
   }
   return arr;
 }
+
+/*
+create new array literal
+go through each index of the array but stop going through the array at the count
+push those values into the array and return the array
+*/

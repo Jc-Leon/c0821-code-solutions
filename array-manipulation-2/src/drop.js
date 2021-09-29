@@ -6,3 +6,8 @@ function drop(array, count) {
   }
   return arr;
 }
+/*
+craete new array literal
+go through each index of the array starting at the count
+push those values into the array and return that array
+*/
