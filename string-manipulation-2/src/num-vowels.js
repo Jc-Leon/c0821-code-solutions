@@ -11,7 +11,8 @@ function numVowels(string) {
 }
 /*
 have a counter start at 0
-create a array of vowels and loop through array
+create a array of vowels
+loop through values of string
 and make a condition if there are vowels in the string
 then increment the counter by 1
 and return the counter
