@@ -1,0 +1,500 @@
+   74  git commit -m 'completed javascript-and-json'
+   75  git push origin javascript-and-json
+   76  git checkout master
+   77  git pull
+   78  git branch javascript-local-storage
+   79  git switch javascript-local-storage
+   80  git status
+   81  git add javascript-local-storage
+   82  git commit -m 'completed javascript-local-storage'
+   83  git push origin javascript-local-storage
+   84  git status
+   85  git add javascript-local-storage
+   86  git commit -m 'completed javascript-local-storage'
+   87  git push origin javascript-local-storage
+   88  git checkout master
+   89  git switch array-manipulation-2
+   90  git branch array-manipulation-2
+   91  git switch array-manipulation-2
+   92  git status
+   93  git add array-manipulation-2
+   94  git commit -m 'progress'
+   95  git checkout master
+   96  git switch javascript-local-storage
+   97  git add window.addEventListener('beforeunload', handleStorage);
+   98  git add javascript-local-storage
+   99  git commit -m 'completed javascript-local-storage'
+  100  git push origin javascript-local-storage
+  101  git checkout master
+  102  git switch string-manipulation-2
+  103  git checkout master
+  104  git switch string-manipulation-2
+  105  cd ~/repos
+  106  git clone git@github.com:Jc-Leon/Code-Journal.git
+  107  cd Code-Journal/
+  108  npm ci
+  109  git branch user-can-create-an-entry
+  110  git switch user-can-create-an-entry
+  111  git add user-can-create-an-entry
+  112  git status
+  113  git add css/styles.css
+  114  git add index.html
+  115  git add js/main.js
+  116  git add js/data.js
+  117  git commit -m 'completed user-can-create-an-entry'
+  118  git push origin user-can-create-an-entry
+  119  git checkout master
+  120  git pull
+  121  git branch user-can-view-their-entries 
+  122  git switch user-can-view-their-entries 
+  123  git status
+  124  git add string-manipulation-2
+  125  git commit -m 'progress'
+  126  git checkout master
+  127  git pull
+  128  cd ~/repos
+  129  cd week-planner
+  130  cd week-planner
+  131  cd ~/repos
+  132  git clone git@github.com:aar-woo/week-planner.git
+  133  cd week-planner
+  134  nopm ci
+  135  npm ci
+  136  cd ~/repos
+  137  git add .
+  138  git commit -m 'funny'
+  139  git push origin master
+  140  git pull origin master
+  141  git pull
+  142  git status
+  143  git pull origin function handleStorage(event) {
+  144    var todosJSON = JSON.stringify(todos);
+  145    localStorage.setItem('javascript-local-storage', todosJSON);
+  146  }
+  147  var previousTodosJSON = localStorage.getItem('javascript-local-storage');
+  148  if (previousTodosJSON !== null) {
+  149    todos = JSON.parse(previousTodosJSON);
+  150  }
+  151  git pull origin master
+  152  git pull origin master
+  153  git add . 
+  154  git commit -m 'ljkasdf'
+  155  git commit -m 'ljkasdf' --no-verify
+  156  git push origin $closeModal.addEventListener('submit', submitData);
+  157  git push origin master
+  158  git pull origin master
+  159  git status
+  160  git add .
+  161  git commit -m 'table' --no-verify
+  162  git push origin master
+  163  git pull origin master
+  164  git add .
+  165  git commit -m 'tea'
+  166  git commit -m 'tea' --no-verify
+  167  git push origin master
+  168  git checkout master
+  169  git checkout master
+  170  git branch javascript-custom-methods
+  171  git switch javascript-custom-methods
+  172  git status
+  173  git add javascript-custom-methods
+  174  git commit -m 'completed javascript-custom-methods'
+  175  git push origin javascript-custom-methods
+  176  git switch string-manipulation-2
+  177  git checkout master
+  178  git switch numVowels(string)
+  179  git switch string-manipulation-2
+  180  git checkout master
+  181  git branch
+  182  git switch javascript-bank
+  183  git checkout master
+  184  git switch javascript-bank
+  185  git checkout master
+  186  git 
+  187  .circle-light {
+  188    display: flex;
+  189    justify-content: center;
+  190    height: 20rem;
+  191    width: 20rem;
+  192    background-color: #faea84;
+  193    border-radius: 50%;
+  194    margin: 13rem 0 0 35rem;
+  195    border: none;
+  196    cursor: pointer;
+  197    box-shadow: 0 2px 10px #faea84;
+  198  git switch javascript-carousel
+  199  git status
+  200  git add css/styles.css
+  201  git add index.html
+  202  git add js/main.js
+  203  git commit -m 'completed user-can-view-their-entries'
+  204  git push origin user-can-view-their-entries
+  205  git status
+  206  git add js/main.js
+  207  git commit -m 'completed user-can-view-their-entries'
+  208  git push origin user-can-view-their-entries
+  209  git status
+  210  git add js/main.js
+  211  git commit -m 'completed user-can-view-their-entries'
+  212  git push origin user-can-view-their-entries
+  213  git status
+  214  git add js/main.js
+  215  git commit -m 'completed user-can-view-their-entries'
+  216  git push origin user-can-view-their-entries
+  217  git status
+  218  git status
+  219  git add js/main.js
+  220  git commit -m 'completed user-can-view-their-entries'
+  221  git push origin user-can-view-their-entries
+  222  git status
+  223  git add js/main.js
+  224  git commit -m 'completed js/main.js'
+  225  git push origin user-can-view-their-entries
+  226  git status
+  227  git add css/styles.css
+  228  git add index.html
+  229  git add js/main.js
+  230  git commit -m 'completed user-can-view-their-entries'
+  231  git push origin user-can-view-their-entries
+  232  git checkout master
+  233  git pull
+  234  git branch user-can-edit-an-entry
+  235  git switch user-can-edit-an-entry
+  236  cd ~/repos
+  237  git clone git@github.com:Jc-Leon/driving-game.git
+  238  cd driving-game
+  239  npm ci
+  240  git branch user-can-see-their-car
+  241  git switch user-can-see-their-car
+  242  git status
+  243  git add index.html
+  244  git add main.js
+  245  git add styles.css
+  246  git satus
+  247  git status
+  248  git commit -m 'completed user-can-see-their-car'
+  249  git push origin user-can-see-their-car
+  250  git checkout master
+  251  git checkout master
+  252  git pull
+  253  git pull
+  254  dev-env
+  255  git branch user-can-turn-their-car
+  256  git switch user-can-turn-their-car
+  257  git status
+  258  git add main.js
+  259  git add styles.css
+  260  git commit -m 'completed user-can-turn-their-car'
+  261  git push origin user-can-turn-their-car
+  262  git checkout master
+  263  git pull
+  264  git branch user-can-start-their-car
+  265  git switch user-can-start-their-car
+  266  git checkout master
+  267  git swtich string-manipulation-2
+  268  git switch string-manipulation-2
+  269  git status
+  270  git add css/styles.css
+  271  git add index.html
+  272  git commit -m 'progress'
+  273  git checkout master
+  274   git switch javascript-custom-methods
+  275  git add javascript-custom-methods
+  276  git commit - m 'completed javascript-custom-methods'
+  277  git commit -m 'completed javascript-custom-methods'
+  278  git push origin javascript-custom-methods
+  279  git checkout master
+  280  git pull
+  281  git pull
+  282  git branch javascript-this
+  283  git swith javascript-this
+  284  git switch javascript-this
+  285  git add javascript-carousel
+  286  git commit -m 'progress'
+  287  git checkout master
+  288  git switch javascript-bank
+  289  git status
+  290  git add javascript-bank
+  291  git commit -m 'completed javascript-bank'
+  292  git push origin javascript-bank
+  293  git checkout master
+  294  git checkout master
+  295  git switch javascript-carousel
+  296  git status
+  297  git add javascript-carousel/index.html
+  298  git add javascript-carousel/main.js
+  299  git add javascript-carousel/styles.css
+  300  git commit -m 'completed javascript-carousel'
+  301  git push origin javascript-carousel
+  302  git checkout master
+  303  git branch http-messages
+  304  git switch http-messages
+  305  git status
+  306  git add http-messages
+  307  git commit -m 'completed http-messages'
+  308  git push origin http-messages
+  309  git checkout master
+  310  git branch javascript-ajax
+  311  git switch javascript-ajax
+  312  git status
+  313  git add javascript-ajax
+  314  git commit -m 'completed javascript-ajax'
+  315  git push origin javascript-ajax
+  316  git status
+  317  git checkout master
+  318  git switch string-manipulation-2
+  319  git status
+  320  git commit -m 'progress'
+  321  git add string-manipulation-2
+  322  git commit -m 'progress'
+  323  git checkout master
+  324  git switch javascript-ajax
+  325  git status
+  326  git add javascript-this
+  327  git commit -m 'completed javascript-this'
+  328  git push origin javascript-this
+  329  git checkout master
+  330  git pull
+  331  git switch array-manipulation-2
+  332  git status
+  333  git status
+  334  git checkout master
+  335  git branch javascript-prototypes
+  336  git switch javascript-prototypes
+  337  git status
+  338  git add javascript-prototypes
+  339  git commit -m 'completed javascript-prototypes'
+  340  git push origin javascript-prototypes
+  341  git checkout master
+  342  git switch string-manipulation-2
+  343  git add javascript-timers
+  344  git commit -m 'completed javascript-timers'
+  345  git push origin master javascript-timers
+  346  git status
+  347  git commit -m 'completed javascript-timers'
+  348  git push origin javascript-timers
+  349  git checkout master
+  350  git pull
+  351  git switch javascript-bank
+  352  git status
+  353  git add javascript-bank
+  354  git commit -m 'completed javascript-bank'
+  355  git checkout master
+  356  git branch javascript-carousel
+  357  git switch javascript-carousel
+  358  git checkout master
+  359  git switch string-manipulation-2
+  360  git status
+  361  git status
+  362  git checkout masater
+  363  git checkout master
+  364  git switch array-manipulation-2
+  365  cd ~repos/
+  366  cd ~repos
+  367  cd ~/repos
+  368  git clone
+  369  git clone git@github.com:Jc-Leon/AJAX-Project.git
+  370  cd AJAX-project
+  371  npm ci
+  372  git status
+  373  git branch user-can-search-for-an-ingredient
+  374  git switch user-can-search-for-an-ingredient
+  375  git status
+  376  git status
+  377  git add array-manipulation-2
+  378  git commit -m 'completed array-manipulation-2'
+  379  git checkout master
+  380  git switch string-manipulation-2
+  381  git status
+  382  git add string-manipulation-2
+  383  git commit -m 'progress'
+  384  git commit -m 'progress' --no-verify
+  385  git checkout master
+  386  git switch array-manipulation-2
+  387  git checkout master
+  388  git switch string-manipulation-2
+  389  git status
+  390  git add string-manipulation-2
+  391  git commit - m 'completed string-manipulation-2'
+  392  git commit -m 'completed string-manipulation-2'
+  393  git push origin master
+  394  git push origin string-manipulation-2
+  395  git status
+  396  git checkout master
+  397  git switch array-manipulation-2
+  398  git status
+  399  git add array-manipulation-2
+  400  git commit -m 'completed array-manipulation-2'
+  401  git push origin array-manipulation-2
+  402  git status
+  403  git checkout master
+  404  git switch object-manipulation-2
+  405  git status
+  406  git add object-manipulation-2
+  407  git commit -m 'completed object-manipulation-2'
+  408  git push origin object-manipulation-2
+  409  git checkout master
+  410  git status
+  411  git status
+  412  git add array-manipulation-2
+  413  git commit -m 'completed array-manipulation-2'
+  414  git checkout master
+  415  git switch object-manipulation-2
+  416  git branch object-manipulation-2
+  417  git switch object-manipulation-2
+  418  git status
+  419  git add object-manipulation-2
+  420  git commit -m 'completed object-manipulation-2'
+  421  git commit -m 'completed object-manipulation-2' --no-verify
+  422  git switch array-manipulation-2
+  423  git status
+  424  git checkout master
+  425  git switch object-manipulation-2
+  426  git status
+  427  git status
+  428  git commit -m 'completed object-manipulation-2'
+  429  git add object-manipulation-2
+  430  git commit -m 'completed object-manipulation-2'
+  431  git checkout master
+  432  git switch array-manipulation-2
+  433  git status
+  434  git add css/styles.css
+  435  git add index.html
+  436  git add images/emptyheart.svg
+  437  git add images/favorites.png
+  438  git add images/fullheart.svg
+  439  git add images/homepage.mp4
+  440  git add images/logo.png
+  441  git status
+  442  git commit -m 'background video added'
+  443  git status
+  444  git add css/styles.css
+  445  git add index.html
+  446  git add js/main.js
+  447  git status
+  448  git status
+  449  git add css/styles.css
+  450  git add js/main.js
+  451  git add index.html
+  452  git status
+  453  git status
+  454  git add css/styles.css
+  455  git add js/main.js
+  456  git add index.html
+  457  git status
+  458  git commit -m 'completed user-can-search-for-an-ingredient'
+  459  git push origin user-can-search-for-an-ingredient
+  460  git add css/styles.css
+  461  git add js/main.js
+  462  git add index.html
+  463  git commit -m 'completed user-can-search-for-an-ingredient'
+  464  git push origin user-can-search-for-an-ingredient
+  465  git status
+  466  git add css/styles.css
+  467  git add index.html
+  468  git add js/main.js
+  469  git commit -m 'completed user-can-search-for-an-ingredient'
+  470  git commit -m 'completed user-can-search-for-an-ingredient' --no-verify
+  471  git push origin user-can-search-for-an-ingredient
+  472  git status
+  473  git checkout master
+  474  git pull
+  475  git branch user-can-view-all-drinks-with-that-ingredient 
+  476  git switch user-can-view-all-drinks-with-that-ingredient 
+  477  git status
+  478  git status
+  479  git add css/styles.css
+  480  git add index.html
+  481  git add js/main.js
+  482  git commit -m 'completed user-can-view-all-drinks-with-that-ingredient'
+  483  git commit -m 'completed user-can-view-all-drinks-with-that-ingredient' --no-verify
+  484  git push origin user-can-view-all-drinks-with-that-ingredient
+  485  git status
+  486  git checkoout master
+  487  git checkout master
+  488  git pull
+  489  git status
+  490  git branch user-can-view-the-recipe
+  491  git switch user-can-view-the-recipe
+  492  git status
+  493  git status
+  494  git add js/main.js
+  495  git commit -m 'completed user-can-edit-an-entry'
+  496  git push origin user-can-edit-an-entry
+  497  git checkout master
+  498  git switch string-manipulation-2
+  499  git branch array-manipulation-3
+  500  git switch array-manipulation-3
+  501  cd
+  502  cd ~/repos/c0821-code-solutions/
+  503  pwd
+  504  cd command-line-basics
+  505  pwd
+  506  man man
+  507  man cat
+  508  cat laziness.txt 
+  509  cat impatience.txt 
+  510  cat hubris.txt 
+  511  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  512  cat three-virtues.txt 
+  513  man ls
+  514  ls
+  515  ls -a
+  516  ls -F
+  517  ls lfz-staff/
+  518  ls -aF lfz-staff/ > lfz-staff/contents.txt
+  519  cat lfz-staff/contents.txt 
+  520  pwd
+  521  man pwd
+  522  pwd
+  523  pwd > i-was-here.txt
+  524  ls i-was-here.txt 
+  525  cat i-was-here.txt 
+  526  man echo
+  527  echo 'Hello, World!'
+  528  echo 'Hello, World!' > hello.txt
+  529  ls hello.txt 
+  530  cat hello.txt 
+  531  man touch
+  532  touch > tag-youre-it.txt
+  533  ls snoot
+  534  man touch
+  535  touch tag-youre-it.txt
+  536  touch > snoot/boop.txt
+  537  touch snoot/boop.txt
+  538  ls snoot/
+  539  man mdkir
+  540  mdn mkdir
+  541  ma mkdir
+  542  man mkdir
+  543  man mkdir
+  544  mkdir parent
+  545  ls parent/
+  546  mkdir -p parent/child/grandchild
+  547  touch .gitkeep parent/child/grandchild
+  548  ls
+  549  ls parent
+  550  touch parent/child/grandchild/ .gitkeep
+  551  touch parent/child/grandchild/.gitkeep
+  552  la -a parent/child/grandchild/
+  553  ls -a parent/child/grandchild/
+  554  man mv
+  555  man mv
+  556  mv pokiemans = pokemon
+  557  mv pokiemans pokemon
+  558  ls pokemon/
+  559  man rm
+  560  rm lol.txt 
+  561  ls lol.txt
+  562  rm -r kill-me/
+  563  ls kill-me/
+  564  man cp
+  565  man cp
+  566  cp and-then.txt 
+  567  cp and-then.txt no-and-then.txt 
+  568  ls and-then.txt 
+  569  ls no-and-then.txt 
+  570  cat and-then.txt no-and-then.txt 
+  571  man history
+  572  history
+  573  history > command-history.txt
