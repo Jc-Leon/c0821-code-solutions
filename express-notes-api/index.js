@@ -29,26 +29,23 @@ app.get('/api/notes/:id', function (req, res) {
 app.use(express.json());
 
 app.post('/api/notes', (req, res) => {
-  const empty = {};
   const obj = req.body;
   console.log('obj', obj);
-  obj.id = file.nextId;
   console.log('file.nextId', file.nextId);
   console.log(obj.id);
-  file.notes[file.nextId] = obj;
   console.log(file.notes[file.nextId]);
-  file.nextId++;
-  if (obj) {
-    console.log(!obj);
+  if (JSON.stringify(obj) === JSON.stringify({})) {
     res.status(400).json({ error: 'content is a required field' });
   } else {
-
+    obj.id = file.nextId;
+    file.notes[file.nextId] = obj;
+    file.nextId++;
     res.status(201).json(obj);
+    fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
+      if (err) {
+        console.error(err);
+      }
+    });
   }
 
-  fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
-    if (err) {
-      console.error(err);
-    }
-  });
 });
