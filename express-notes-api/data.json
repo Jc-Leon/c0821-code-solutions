@@ -1,5 +1,5 @@
 {
-  "nextId": 21,
+  "nextId": 10,
   "notes": {
     "2": {
       "id": 2,
@@ -16,45 +16,6 @@
     "9": {
       "id": 9,
       "content": "Inertia is a property of matter."
-    },
-    "10": {
-      "content": "this is patrick",
-      "id": 10
-    },
-    "11": {
-      "content": "this is",
-      "id": 11
-    },
-    "12": {
-      "id": 12
-    },
-    "13": {
-      "id": 13
-    },
-    "14": {
-      "content": "this is",
-      "id": 14
-    },
-    "15": {
-      "id": 15
-    },
-    "16": {
-      "id": 16
-    },
-    "17": {
-      "content": "this is",
-      "id": 17
-    },
-    "18": {
-      "id": 18
-    },
-    "19": {
-      "content": "this is",
-      "id": 19
-    },
-    "20": {
-      "content": "jc",
-      "id": 20
     }
   }
 }

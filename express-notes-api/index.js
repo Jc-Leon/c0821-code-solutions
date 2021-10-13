@@ -30,11 +30,7 @@ app.use(express.json());
 
 app.post('/api/notes', (req, res) => {
   const obj = req.body;
-  console.log('obj', obj);
-  console.log('file.nextId', file.nextId);
-  console.log(obj.id);
-  console.log(file.notes[file.nextId]);
-  if (JSON.stringify(obj) === JSON.stringify({})) {
+  if (JSON.stringify(obj) === '{}') {
     res.status(400).json({ error: 'content is a required field' });
   } else {
     obj.id = file.nextId;
@@ -43,9 +39,46 @@ app.post('/api/notes', (req, res) => {
     res.status(201).json(obj);
     fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
       if (err) {
-        console.error(err);
+        res.status(500).json({ error: 'An unexpected error occurred.' });
       }
     });
   }
+});
+app.delete('/api/notes/:id', (req, res) => {
+  const id = Number(req.params.id);
+  if (isNaN(id)) {
+    res.status(400).json({ error: 'id must be a valid integer' });
+  } else if (file.notes[id] === undefined) {
+    res.status(404).json({ error: `cannot find note with id ${id}` });
+  } else {
+    res.status(204);
+    res.json(file.notes[id]);
+    delete file.notes[id];
+    fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
+      if (err) {
+        res.status(500).json({ error: 'An unexpected error occurred.' });
+      }
+    });
+  }
+});
 
+app.put('/api/notes/:id', (req, res) => {
+  const id = Number(req.params.id);
+  const obj = req.body;
+  if (isNaN(id)) {
+    res.status(400).json({ error: 'id must be a valid integer' });
+  } else if (file.notes[id] === undefined) {
+    res.status(404).json({ error: `cannot find note with id ${id}` });
+  } else if (JSON.stringify(obj) === '{}') {
+    res.status(400).json({ error: 'content is a required field' });
+  } else {
+    obj.id = id;
+    file.notes[id] = obj;
+    res.status(200).json(file.notes[id]);
+    fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
+      if (err) {
+        res.status(500).json({ error: 'An unexpected error occurred.' });
+      }
+    });
+  }
 });
