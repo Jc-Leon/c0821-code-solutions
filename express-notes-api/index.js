@@ -30,16 +30,18 @@ app.use(express.json());
 
 app.post('/api/notes', (req, res) => {
   const obj = req.body;
-  if (JSON.stringify(obj) === '{}') {
+  if (typeof obj.content === 'undefined') {
     res.status(400).json({ error: 'content is a required field' });
   } else {
     obj.id = file.nextId;
     file.notes[file.nextId] = obj;
     file.nextId++;
-    res.status(201).json(obj);
     fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
       if (err) {
         res.status(500).json({ error: 'An unexpected error occurred.' });
+      } else {
+        res.status(201).json(obj);
+
       }
     });
   }
@@ -52,11 +54,13 @@ app.delete('/api/notes/:id', (req, res) => {
     res.status(404).json({ error: `cannot find note with id ${id}` });
   } else {
     res.status(204);
-    res.json(file.notes[id]);
     delete file.notes[id];
     fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
       if (err) {
         res.status(500).json({ error: 'An unexpected error occurred.' });
+      } else {
+        res.json(file.notes[id]);
+
       }
     });
   }
@@ -69,15 +73,17 @@ app.put('/api/notes/:id', (req, res) => {
     res.status(400).json({ error: 'id must be a valid integer' });
   } else if (file.notes[id] === undefined) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
-  } else if (JSON.stringify(obj) === '{}') {
+  } else if (typeof obj.content === 'undefined') {
     res.status(400).json({ error: 'content is a required field' });
   } else {
     obj.id = id;
     file.notes[id] = obj;
-    res.status(200).json(file.notes[id]);
     fs.writeFile('data.json', JSON.stringify(file, null, 2), 'utf8', err => {
       if (err) {
         res.status(500).json({ error: 'An unexpected error occurred.' });
+      } else {
+        res.status(200).json(file.notes[id]);
+
       }
     });
   }
