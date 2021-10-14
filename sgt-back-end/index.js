@@ -73,12 +73,13 @@ app.put('/api/grades/:gradeId', (req, res, next) => {
 update "grades"
 set "name" = $1, "course" = $2, "score" = $3
 where "gradeId" = $4
+returning *
   `;
     const params = [name, course, score, gradeId];
     db.query(sql, params)
       .then(result => {
-        const grade = result.rowCount;
-        if (grade === 0) {
+        const grade = result.rows[0];
+        if (!grade) {
           res.status(404).json({
             error: `Cannot find grade with "gradeId" ${gradeId}`
           });
@@ -105,12 +106,13 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
     const sql = `
 delete from "grades"
 where "gradeId" = $1
+returning *
   `;
     const params = [gradeId];
     db.query(sql, params)
       .then(result => {
-        const grade = result.rowCount;
-        if (grade === 0) {
+        const grade = result.rows[0];
+        if (!grade) {
           res.status(404).json({
             error: `Cannot find grade with "gradeId" ${gradeId}`
           });
