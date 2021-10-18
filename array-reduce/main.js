@@ -19,24 +19,18 @@ const traits = [
 
 const add = numbers.reduce((previous, next) => previous + next);
 const multiply = numbers.reduce((previous, next) => previous * next);
-// const balance = ((previous, next) => {
-//   if( transaction.type === 'deposit'){
-//     return balance += transaction.amount
-//   }
-//   return balance -= transaction.amount
-// })
+const balance = account.reduce((previous, next) => {
+  if (next.type === 'withdrawal') {
+    return previous - next.amount;
+  } else {
+    return previous + next.amount;
+  }
+}, 0);
+const composite = traits.reduce((previous, next) => {
+  return Object.assign(previous, next);
+}, {});
 
-// const net = (balance, transaction) => {
-//   if (transaction.type === 'deposit') {
-//     return balance + transaction.amount;
-//   }
-//   return balance - transaction.amount;
-// };
-// const balance = account.reduce(net, 0);
-// console.log('balance:', balance);
-// const composite = traits.reduce((composite, trait) => {
-//   return Object.assign(composite, trait);
-// }, {});
-// console.log('composite:', composite);
 console.log(add);
 console.log(multiply);
+console.log(balance);
+console.log(composite);
