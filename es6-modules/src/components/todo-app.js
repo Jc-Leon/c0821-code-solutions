@@ -1,6 +1,6 @@
+import { createElement, noop } from '../lib/';
 import TodoForm from './todo-form';
 import TodoList from './todo-list';
-import { createElement, noop } from '../lib/index';
 
 export default class TodoApp {
   constructor(container, nextId, todos, onUpdate = noop) {
