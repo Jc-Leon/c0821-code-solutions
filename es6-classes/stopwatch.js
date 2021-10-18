@@ -1,7 +1,9 @@
 /* exported Stopwatch */
 
-function Stopwatch(startTimeInSeconds) {
-  this.elapsedSeconds = startTimeInSeconds;
+class Stopwatch {
+  constructor(startTimeInSeconds) {
+    this.elapsedSeconds = startTimeInSeconds;
+  }
 }
 
 Stopwatch.prototype.tick = function () {
@@ -19,7 +21,7 @@ Stopwatch.prototype.getTime = function () {
   hours = hours.toString().padStart(2, '0');
   minutes = minutes.toString().padStart(2, '0');
   seconds = seconds.toString().padStart(2, '0');
-  return `${this.hours}:${this.minutes}:${this.seconds}`;
+  return `${hours}:${minutes}:${seconds}`;
 };
 
 Stopwatch.prototype.reset = function () {
