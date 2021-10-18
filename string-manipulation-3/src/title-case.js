@@ -28,3 +28,12 @@ function titleCase(string) {
   sentence = sentence.join(' ');
   return sentence;
 }
+
+/*
+lowercase string and split the string bu its space
+create multiple conditions to make sure title matches apppropriate titlecase
+create array of word to keep lowercased when creating conditions
+have first letter of the title always be capitalized
+join the string back together
+return the string
+*/
