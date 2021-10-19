@@ -7,4 +7,4 @@ function CustomButton() {
   );
 }
 
-ReactDOM.render(CustomButton(), document.getElementById('root'));
+ReactDOM.render(<CustomButton />, document.getElementById('root'));
