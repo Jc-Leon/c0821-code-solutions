@@ -5,7 +5,7 @@ function List(props) {
   const objContent = (
     <ul>
       {props.pokedex.map(pokemon =>
-        <li key={pokemon}>
+        <li key={pokemon.number}>
           {pokemon.name}
         </li>
       )}
