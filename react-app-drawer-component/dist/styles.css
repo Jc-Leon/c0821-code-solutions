@@ -1,0 +1,21 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: grey;
+  width: 500px;
+  height: 100vh;
+}
+
+.padding-left {
+  padding-left: 1rem;
+}
+
+p {
+  line-height: 3rem;
+  padding-left: 1rem;
+}
+
+p:hover {
+  background-color: #e1dfe1;
+}
