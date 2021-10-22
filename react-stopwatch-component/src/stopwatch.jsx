@@ -5,34 +5,60 @@ export default class Stopwatch extends React.Component {
     super(props);
     this.state = { isClicked: false, count: 0 };
 
-    this.handleClick = this.handleClick.bind(this);
-    this.startTime = this.handleClick.bind(this);
+    this.counter = this.counter.bind(this);
+    this.startTime = this.startTime.bind(this);
+    this.stop = this.stop.bind(this);
     this.reset = this.reset.bind(this);
-  }
 
-  handleClick(e) {
-    this.setState({ isClicked: !this.state.isClicked });
   }
 
   startTime() {
+    this.setState({ isClicked: true }, () => {
+      const timer = setInterval(() => {
+        if (this.state.isClicked === true) {
+          this.counter();
+        } else {
+          clearInterval(timer);
+        }
+      }, 1000);
+    });
+  }
+
+  counter() {
     this.setState({ count: this.state.count + 1 });
   }
 
+  stop() {
+    this.setState({ isClicked: false });
+  }
+
   reset() {
-    this.setState({ count: this.state.count });
+    if (this.state.isClicked === false) { this.setState({ count: 0 }); }
   }
 
   render() {
-    const isClicked = this.state.isClicked;
-    return (<>
+    if (this.state.isClicked === false) {
+      return (<>
     <div className="column">
-    <div className='circle'>0</div>
+    <div onClick={this.reset} className='circle'>{this.state.count}</div>
     <i
-      onClick={this.handleClick}
-      className={isClicked ? 'fas fa-pause' : 'fas fa-play'}>
+      onClick={this.startTime}
+      className='fas fa-play'>
     </i>
     </div>
     </>
-    );
+      );
+    } else {
+      return (<>
+    <div className="column">
+    <div className='circle'>{this.state.count}</div>
+    <i
+      onClick={this.stop}
+      className='fas fa-pause'>
+    </i>
+    </div>
+    </>
+      );
+    }
   }
 }
