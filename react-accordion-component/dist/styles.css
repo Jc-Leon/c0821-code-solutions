@@ -1,0 +1,14 @@
+
+.content,
+.title {
+  border-bottom: solid 1px;
+  margin: 0;
+}
+
+.border {
+  border: solid 2px;
+}
+
+.title:hover {
+  cursor: pointer;
+}
