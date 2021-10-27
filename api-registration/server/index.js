@@ -22,6 +22,24 @@ app.post('/api/auth/sign-up', (req, res, next) => {
   const { username, password } = req.body;
   if (!username || !password) {
     throw new ClientError(400, 'username and password are required fields');
+  } else {
+    argon2
+      .hash(password)
+      .then(hashedPassword => {
+        const sql = `
+        insert into "users" ("username","hashedPassword")
+        values ($1,$2)
+        returning "createdAt","userId","username"
+        `;
+        const params = [username, hashedPassword];
+        db.query(sql, params)
+          .then(result => {
+            const account = result.rows[0];
+            res.status(201).json(account);
+          })
+          .catch(err => next(err));
+      })
+      .catch(err => next(err));
   }
 
   /* your code starts here */
@@ -37,27 +55,7 @@ app.post('/api/auth/sign-up', (req, res, next) => {
    *
    * Hint: Insert statements can include a `returning` clause to retrieve the insterted row(s).
    */
-  argon2
-    .hash(password)
-    .then(hashedPassword => {
-      const sql = `
-        insert into "users" ("username","hashedPassword")
-        values ($1,$2)
-        returning *
-        `;
-      const params = [username, hashedPassword];
-      db.query(sql, params)
-        .then(result => {
-          const grade = result.rows[0];
-          res.status(201).json(grade);
-        })
-        .catch(err => {
-          console.error(err);
-          res.status(500).json({
-            error: 'An unexpected error occurred.'
-          });
-        });
-    });
+
 });
 
 app.use(errorMiddleware);
