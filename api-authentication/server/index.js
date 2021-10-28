@@ -68,9 +68,9 @@ where "username" = $1  `;
           const user = { userId, username };
           const token = jwt.sign(user, process.env.TOKEN_SECRET);
           res.status(200).json({ token, user });
-        });
-    }
-    )
+        })
+        .catch(err => next(err));
+    })
     .catch(err => next(err));
 });
 
