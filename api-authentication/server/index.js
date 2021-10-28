@@ -48,34 +48,35 @@ app.post('/api/auth/sign-in', (req, res, next) => {
     throw new ClientError(401, 'invalid login');
   }
   const sql = `
-select "userId", "username" ,"hashedPassword"
+select "userId" ,"hashedPassword"
 from "users"
 where "username" = $1  `;
   const params = [username];
   db.query(sql, params)
     .then(result => {
-      const account = result.rows;
+      const account = result.rows[0];
       if (!account) {
         throw new ClientError(401, 'invalid login');
       }
-      if (result.rows[0].userId) {
-        argon2
-          .verify(result.rows[0].hashedPassword, password)
-          .then(isMatching => {
-            if (!isMatching) {
-              throw new ClientError(401, 'invalid login');
-            }
-            if (isMatching) {
-              const payload = { userId, username };
-            }
-          });
-      }
-    })
+      argon2
+        .verify(result.rows[0].hashedPassword, password)
+        .then(isMatching => {
+          if (!isMatching) {
+            throw new ClientError(401, 'invalid login');
+          }
+          const { userId } = account;
+          const user = { userId, username };
+          const token = jwt.sign(user, process.env.TOKEN_SECRET);
+          res.status(200).json({ token, user });
+        });
+    }
+    )
     .catch(err => next(err));
+});
 
-  /* your code starts here */
+/* your code starts here */
 
-  /**
+/**
    * Query the database to find the "userId" and "hashedPassword" for the "username".
    * Then, 😉
    *    If no user is found,
@@ -92,8 +93,6 @@ where "username" = $1  `;
    *      Catch any error.
    * Catch any error.
    */
-
-});
 
 app.use(errorMiddleware);
 
