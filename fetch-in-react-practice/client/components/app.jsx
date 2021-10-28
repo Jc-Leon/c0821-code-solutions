@@ -46,7 +46,7 @@ export default class App extends React.Component {
       body: JSON.stringify(newTodo)
     })
       .then(response => response.json())
-      .then(json => (this.setState({ todos: this.state.todos.concat(newTodo) })
+      .then(json => (this.setState({ todos: this.state.todos.concat(json) })
       ));
   }
 
