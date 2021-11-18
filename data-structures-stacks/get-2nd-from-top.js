@@ -6,15 +6,13 @@ function get2ndFromTop(stack) {
     return undefined;
   }
 
-  // const second = stack.pop();
-  // if (typeof second === 'undefined') {
-  //   stack.push(first);
-  //   return undefined;
-  // }
-  // stack.push(second);
-  // stack.push(first);
-  // return second;
-  const next = stack.peek();
+  const second = stack.pop();
+  if (typeof second === 'undefined') {
+    stack.push(first);
+    return undefined;
+  }
+  stack.push(second);
   stack.push(first);
-  return next;
+  return second;
+
 }
